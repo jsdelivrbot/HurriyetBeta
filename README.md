@@ -5,4 +5,7 @@ mobil uygulamadır.
 
 ## Resimler
 
-* [Teacher dashboard with add announcement section](https://cdn.rawgit.com/lugrugzo/HurriyetBeta/97e2b7a4/pics/1.png)
+![Anasayfa](https://cdn.rawgit.com/lugrugzo/HurriyetBeta/master/gh-images/1.png)
+
+
+![Detay](https://cdn.rawgit.com/lugrugzo/HurriyetBeta/master/gh-images/2.png)
