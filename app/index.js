@@ -2,6 +2,7 @@ import React  from 'react'
 import {Router, Scene, Stack} from 'react-native-router-flux'
 
 import IndexPage from './pages/IndexPage'
+import ArticleSinglePage from './pages/ArticleSinglePage'
 
 export default class App extends React.Component {
 
@@ -9,8 +10,9 @@ export default class App extends React.Component {
 
         return (
             <Router>
-                <Stack key="root" hideNavBar>
+                <Stack key="root">
                     <Scene key="indexPage" component={IndexPage} initial />
+                    <Scene key="articleSinglePage" component={ArticleSinglePage} />
                 </Stack>
             </Router>
         )

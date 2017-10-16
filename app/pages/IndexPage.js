@@ -2,6 +2,7 @@ import React  from 'react'
 import { FlatList, View } from 'react-native'
 import HurriyetService from '../service/HurriyetService'
 import ArticleRowComponent from '../components/ArticleRowComponent'
+import { Actions } from 'react-native-router-flux'
 
 export default class IndexPage extends React.Component {
 
@@ -24,13 +25,20 @@ export default class IndexPage extends React.Component {
     }
 
     render() {
-
         return (
-            <View>
+            <View style={{
+                backgroundColor: '#FFFFFF',
+                padding: 10
+            }}>
                 <FlatList
                     data={this.state.articles}
                     keyExtractor={item => item.Id}
-                    renderItem={({ item }) => <ArticleRowComponent article={item} />}
+                    renderItem={({ item }) => (
+                        <ArticleRowComponent
+                            article={item}
+                            onPress={() => Actions.articleSinglePage({ articleId: item.Id })}
+                        />
+                    )}
                 />
             </View>
         )

@@ -16,6 +16,10 @@ const HurriyetService = {
 
     articles() {
         return instance({ method: "get",  url: "/articles" })
+    },
+
+    articleSingle(articleId) {
+        return instance({ method: "get",  url: "/articles/" + articleId })
     }
 
 }
